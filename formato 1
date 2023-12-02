@@ -1,0 +1,39 @@
+#include <iostream>
+#include <ctime>
+#include <wchar.h>
+#include <Windows.h>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <string.h>
+#include <stdlib.h>
+#include <cstring>
+#include <conio.h>
+#include <iomanip>
+#include <process.h>
+#include <ctime>
+#include <cstdlib>
+#include <typeinfo>
+#include <fstream>
+
+
+
+using namespace std;
+
+
+
+int main()
+{
+    char ch = 'x';
+    int j = 77;
+    double d = 6.02;
+    string str1 = "Kafka";
+    string str2 = "Proust";
+
+    ofstream outfile("fdata.txt");
+
+    outfile << ch << j << ' ' << d << str1 << ' ' << str2;
+    cout << "The file is recorded\n";
+
+    return 0;
+}
